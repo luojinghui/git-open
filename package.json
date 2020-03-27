@@ -2,20 +2,21 @@
   "name": "git-open",
   "version": "2.1.0",
   "description": "Type `git open` to open the GitHub/GitLab/Bitbucket homepage for a repository.",
-  "author": "Paul Irish (http://paulirish.com/)",
+  "author": "Paul Irish",
   "license": "MIT",
-  "homepage": "https://github.com/paulirish/git-open",
+  "homepage": "https://github.com/luojinghui/git-open",
   "bugs": {
-    "url": "https://github.com/paulirish/git-open/issues"
+    "url": "https://github.com/luojinghui/git-open/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulirish/git-open.git"
+    "url": "https://github.com/luojinghui/git-open.git"
   },
   "contributors": [
     "Paul Irish (http://paulirish.com/)",
     "Jason McCreary <jason@pureconcepts.net> (http://jason.pureconcepts.net/)",
-    "David O'Trakoun <me@davidosomething.com> (https://davidosomething.com/)"
+    "David O'Trakoun <me@davidosomething.com> (https://davidosomething.com/)",
+    "Luo jinghui <luojinghui424@gmail.com> (https://www.luo.com/)"
   ],
   "keywords": [
     "git",

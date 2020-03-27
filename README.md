@@ -14,27 +14,27 @@ $ git open` [--issue] [--ci] [remote-name] [branch-name]
 
 ```sh
 # open git source page
-git open
+$ git open
 ```
 
 ```sh
 # open remote page
-git open someremote
+$ git open someremote
 ```
 
 ```sh
 # open remote branch page
-git open someremote somebranch
+$ git open someremote somebranch
 ```
 
 ```sh
 # open issue page
-git open -i
+$ git open -i
 ```
 
 ```sh
 # open ci/cd page
-git open -c
+$ git open -c
 ```
 
 ## Installation
@@ -67,7 +67,7 @@ To configure git-open you may need to set some `git config` options.
 You can use `--global` to set across all repos, instead of just the current repo.
 
 ```sh
-git config [--global] option value
+$ git config [--global] option value
 ```
 
 ### GitLab options
@@ -81,8 +81,8 @@ To configure GitLab support (or other unique hosting situations) you may need to
   The (web) protocol to open based on the provided git repo domain. Defaults to `https`.
 
 ```sh
-git config [--global] open.[gitdomain].domain [value]
-git config [--global] open.[gitdomain].protocol [value]
+$ git config [--global] open.[gitdomain].domain [value]
+$ git config [--global] open.[gitdomain].protocol [value]
 ```
 
 **Example**
@@ -91,6 +91,15 @@ git config [--global] open.[gitdomain].protocol [value]
 - Your hosted gitlab is `http://repo.intranet/subpath/XXX/YYY`
 
 ```sh
-git config [--global] "open.https://git.internal.biz.domain" "repo.intranet/subpath"
-git config [--global] "open.https://git.internal.biz.protocol" "http"
+$ git config [--global] "open.https://git.internal.biz.domain" "repo.intranet/subpath"
+$ git config [--global] "open.https://git.internal.biz.protocol" "http"
 ```
+
+## Less is more
+Super simple open method：
+
+```sh
+# config oh-my-zsh alias
+$ alias go="git open"
+```
+then `go` anywhere...
