@@ -45,11 +45,19 @@ The preferred way of installation is to simply add the `git-open` script
 somewhere into your path (e.g. add the directory to your `PATH` environment
 or copy `git-open` into an existing included path like `/usr/local/bin`).
 
+### Update
+```bash
+$ rm -rf $ZSH_CUSTOM/plugins/git-open && git clone git@github.com:luojinghui/git-open.git $ZSH_CUSTOM/plugins/git-open
+```
+
 #### [Oh-My-Zsh](http://ohmyz.sh/)
 
 1. `git clone git@github.com:luojinghui/git-open.git $ZSH_CUSTOM/plugins/git-open`
-1. Add `git-open` to your plugin list - edit `~/.zshrc` and change
-   `plugins=(...)` to `plugins=(... git-open)`
+1. Add `git-open` plugin :
+   ```bash
+   # edit `~/.zshrc` file:
+   plugins=(... git-open)
+   ```
 1. Reload source:`source .zshrc`
 
 ## SUPPORTED GIT HOSTING SERVICES
@@ -95,7 +103,7 @@ $ git config [--global] "open.https://git.internal.biz.domain" "repo.intranet/su
 $ git config [--global] "open.https://git.internal.biz.protocol" "http"
 ```
 
-## Less is more
+## Less is more（Recommended）
 Super simple open method：
 
 ```sh
